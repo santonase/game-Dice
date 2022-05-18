@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="casino" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="5Nt-gq-84R" userLabel="background">
+                                <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                                <color key="backgroundColor" red="0.13275232622787234" green="0.14471317137316445" blue="0.3677593113" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="428" id="X1o-El-MTC"/>
+                                    <constraint firstAttribute="height" constant="926" id="uWp-Bv-UfV"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logoCasino" translatesAutoresizingMaskIntoConstraints="NO" id="8iI-dF-ge5">
+                                <rect key="frame" x="114" y="44" width="200" height="140"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="140" id="C27-GO-a16"/>
+                                    <constraint firstAttribute="width" constant="200" id="yJF-fc-91p"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Qg0-rL-To3">
+                                <rect key="frame" x="97" y="413" width="234" height="100"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="left dice" translatesAutoresizingMaskIntoConstraints="NO" id="UZ8-kA-IJ7" userLabel="left bone">
+                                        <rect key="frame" x="0.0" y="0.0" width="107" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="Nra-ZS-tgn"/>
+                                            <constraint firstAttribute="height" constant="100" id="rnC-9I-vTv"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="right dice" translatesAutoresizingMaskIntoConstraints="NO" id="qlz-Mi-7Xy" userLabel="right bone">
+                                        <rect key="frame" x="127" y="0.0" width="107" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="sWK-sx-pOX"/>
+                                            <constraint firstAttribute="height" constant="100" id="uq0-in-SoU"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="oPh-u6-ctd"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mFN-Zg-dwb">
+                                <rect key="frame" x="107" y="812" width="200" height="50"/>
+                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="r79-q5-u0O"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Play">
+                                    <fontDescription key="titleFontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="30"/>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="10"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="ButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dhv-yB-gxw"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="5Nt-gq-84R" secondAttribute="bottom" id="4nC-9e-xd2"/>
+                            <constraint firstItem="mFN-Zg-dwb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="107" id="8pX-bk-fS5"/>
+                            <constraint firstItem="8iI-dF-ge5" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="Hdr-iX-KBh"/>
+                            <constraint firstItem="5Nt-gq-84R" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="N6S-pD-cdl"/>
+                            <constraint firstAttribute="trailing" secondItem="5Nt-gq-84R" secondAttribute="trailing" id="OOm-Th-1ob"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="mFN-Zg-dwb" secondAttribute="trailing" constant="121" id="QuY-7j-pj8"/>
+                            <constraint firstItem="5Nt-gq-84R" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="UuF-H7-qK2"/>
+                            <constraint firstItem="Qg0-rL-To3" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="W9i-QR-KsD"/>
+                            <constraint firstItem="Qg0-rL-To3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="97" id="ZlN-Is-Pga"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Qg0-rL-To3" secondAttribute="trailing" constant="97" id="ejW-ov-933"/>
+                            <constraint firstItem="Qg0-rL-To3" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ep1-Oc-jZf"/>
+                            <constraint firstAttribute="trailing" secondItem="5Nt-gq-84R" secondAttribute="trailing" id="fdK-p7-ohS"/>
+                            <constraint firstItem="5Nt-gq-84R" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="gnJ-Ri-1ai"/>
+                            <constraint firstItem="8iI-dF-ge5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="loq-sn-2Sq"/>
+                            <constraint firstItem="5Nt-gq-84R" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="u7H-kw-xcv"/>
+                            <constraint firstItem="5Nt-gq-84R" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yXv-uN-ZwD"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="mFN-Zg-dwb" secondAttribute="bottom" constant="30" id="yiu-2d-IBa"/>
+                            <constraint firstAttribute="bottom" secondItem="5Nt-gq-84R" secondAttribute="bottom" id="zXy-lA-NRo"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="gameController1" destination="UZ8-kA-IJ7" id="hOy-4u-lEN"/>
+                        <outlet property="gameController2" destination="qlz-Mi-7Xy" id="Le4-zb-HHI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.22429906542056" y="67.386609071274307"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background" width="275" height="183"/>
+        <image name="left dice" width="1280" height="1280"/>
+        <image name="logoCasino" width="2200" height="3000"/>
+        <image name="right dice" width="1280" height="1280"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
